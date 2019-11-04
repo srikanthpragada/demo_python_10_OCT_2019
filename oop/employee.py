@@ -9,11 +9,12 @@ class Employee:
         else:
             raise ValueError('Invalid HRA %')
 
-
     # constructor
     def __init__(self, name, salary=0):
         # Object attributes
         self.name = name
+        if salary < 0:
+            raise ValueError("Invalid salary. Cannot be negative!")
         self.salary = salary
 
     # method
@@ -26,7 +27,7 @@ class Employee:
 
 
 if __name__ == '__main__':
-    e1 = Employee("Mr. Abc", 100000)  # create an object
+    e1 = Employee("Mr. Abc", -1000)  # create an object
     print(e1.get_salary())
-    Employee.set_hraper(40)   # calling static method
+    Employee.set_hraper(40)  # calling static method
     print(e1.get_salary())
