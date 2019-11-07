@@ -8,12 +8,17 @@ except:
 
 for line in f.readlines():
     parts = line.strip("\n").split(",")
+    if len(parts) < 2:
+        continue
+
     name = parts[0]
     total = 0
     for m in parts[1:]:
-        total += int(m)
+        try:
+            total += int(m)
+        except:
+            pass
 
     print(f"{name:20s}  {total}")
 
 f.close()
-
