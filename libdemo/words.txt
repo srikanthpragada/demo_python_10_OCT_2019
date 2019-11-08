@@ -1,0 +1,3 @@
+This is to test word frequency in Python.
+We want to    know how many    times each word   is   present.
+We use dictionary and file handling to do it.
