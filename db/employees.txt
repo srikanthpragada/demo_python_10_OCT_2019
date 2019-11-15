@@ -1,0 +1,6 @@
+CREATE TABLE employees (
+    empid   INTEGER      PRIMARY KEY AUTOINCREMENT,
+    empname VARCHAR (30) NOT NULL,
+    salary  INTEGER      NOT NULL,
+    job     VARCHAR (30)
+);
