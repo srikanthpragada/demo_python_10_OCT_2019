@@ -1,0 +1,7 @@
+create table countries
+( code  varchar(3)  primary key,
+  name  varchar(50),
+  capital varchar(50),
+  population integer,
+  area  integer
+)
